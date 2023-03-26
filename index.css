@@ -1,0 +1,65 @@
+.carousel-cell{
+    
+    width: 281px;
+    min-height: 281px;
+    max-height: 400px;
+    max-width: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+@media screen and ( min-width: 768px ) {
+    /* half-width cells for larger devices */
+    .carousel-cell { width: 40%;height: 632px; }
+  }
+.carousel-cell::before{
+    display: block;
+    content: '';
+}
+.carousel{
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+
+/* position dots in carousel */
+.flickity-page-dots {
+    display: none;
+  }
+
+.carousel-cell a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.carousel-cell a:hover{
+    color: rgb(0, 106, 255);
+}
+
+.col div{
+    overflow: hidden;
+  }
+  
+  .col img {
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .col:hover img {
+    transform: scale(1.06);
+  }
+
+.col a{
+    
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.col a:hover{
+    animation: to_blue 0.5s forwards;
+}
+@keyframes to_blue {
+    to{
+        color: rgb(0, 106, 255);
+        
+        
+    }
+}
